@@ -86,22 +86,34 @@ Reiniciamos el servicio.
 ![imagen](https://github.com/freddy13513/Dhcp/assets/146179724/9794085b-29cd-4d2e-99c8-13c839cc3ce3)
 
 Configuramos la ip estática en el servidor de respaldo. (red interna) la otra tarjeta de red la cometamos para evitar que falle 
+
 ![imagen](https://github.com/freddy13513/Dhcp/assets/146179724/937b0aba-c29b-4882-9104-0c2e7e3abf1f)
 
 Reiniciamos el servicio.
+
 ![imagen](https://github.com/freddy13513/Dhcp/assets/146179724/dbce8af1-6235-4827-86d6-93037037c466)
 
 En el servidor de respaldo configuramos lo mismo teniendo en cuenta que debemos invertir las ip y cambiar primary por secondary. 
+
 ![imagen](https://github.com/freddy13513/Dhcp/assets/146179724/1331cf04-3370-4e53-a9e3-7ee53bd5d291)
 
 Reiniciamos el servicio en esta máquina también.
+
 ![imagen](https://github.com/freddy13513/Dhcp/assets/146179724/1ac4fb1a-e82d-4e9a-8c39-489d88b9e05a)
 
 Vemos que hacen ping.
+
 ![imagen](https://github.com/freddy13513/Dhcp/assets/146179724/6cc9fb48-97b2-4375-b163-0e7f169300f7)
 
 Con este comando vamos viendo los cambios que ocurren al apagar o encender algunos de los otros equipos journelctl -f
+
 ![imagen](https://github.com/freddy13513/Dhcp/assets/146179724/2fb8a10a-986c-4c7d-88b7-5a994d2117da)
+
+Y aquí vemos en tiempo real los cambios y asignación de ip 
+
+![imagen](https://github.com/freddy13513/Dhcp/assets/146179724/bfae993e-c3e1-4555-9cbe-5fcf0ab4d4e4)
+
+![imagen](https://github.com/freddy13513/Dhcp/assets/146179724/7481ee40-1469-40cf-8031-c578af3f842e)
 
 
 
