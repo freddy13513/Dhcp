@@ -5,7 +5,8 @@
 
 ##Entramos en el fichero isc-dhcp_server y modificamos la linea que dice INTERFACESv4=”enp0s3” que es el nombre de la tarjeta de red
 
-![imagen](https://github.com/freddy13513/Dhcp/assets/146179724/2fdbdb07-7eb8-45aa-bf92-9f6663232c68)
+![imagen](https://github.com/freddy13513/Dhcp/assets/146179724/3cb1d220-addc-42cc-8eee-25bf0a45855c)
+
 ##Reiniciamos el servicio.
 
 ![imagen](https://github.com/freddy13513/Dhcp/assets/146179724/e958c60d-c0b1-4edd-b551-68bbc791081f)
