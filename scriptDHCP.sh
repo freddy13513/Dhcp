@@ -18,7 +18,7 @@ sudo systemctl disable NetworkManager
 sudo bash -c 'cat << EOF > /etc/default/isc-dhcp-server
 # On what interfaces should the DHCP server (dhcpd) serve DHCP requests?
 # Separate multiple interfaces with spaces, e.g. "eth0 eth1".
-INTERFACESv4="enp0s3"
+INTERFACESv4="enX0"
 INTERFACESv6=""
 EOF'
 
@@ -68,15 +68,13 @@ sudo bash -c 'cat << EOF > /etc/network/interfaces
 source /etc/network/interfaces.d/*
 
 # The loopback network interface
-auto enp0s3
-iface enp0s3 inet static
-        address 192.168.1.2
-        netmask 255.255.255.0
-        network 192.168.1.0
-        broadcast 192.168.1.255
+auto enX0
+iface enX0 inet static
+        address 172.31.37.55
+        netmask 255.255.240.0
+        network 172.31.32.0
+        broadcast 172.31.47.255
 
-auto enp0s8
-iface enp0s8 inet dhcp
 EOF'
 
 # Reiniciar el servicio networking
