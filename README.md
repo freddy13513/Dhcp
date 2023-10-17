@@ -55,31 +55,40 @@ Aquí vemos que tenemos salida a internet desde el cliente
 ![imagen](https://github.com/freddy13513/Dhcp/assets/146179724/5d692d3d-3f38-4390-9ffd-c33a67dac133)
 
 Con este comando quitamos la ip
+
 ![imagen](https://github.com/freddy13513/Dhcp/assets/146179724/82c0019b-634c-404b-82ee-2a3e3730dda4)
 
 Y con este la renovamos
+
 ![imagen](https://github.com/freddy13513/Dhcp/assets/146179724/8f9d3dc3-cfb0-41fb-aecf-b94b3691f86e)
 
 Para tener salida a internet desde el clientes tenemos que crear las reglas ip table creamos este script y lo ejecutamos
+
 ![imagen](https://github.com/freddy13513/Dhcp/assets/146179724/672a5c89-7d82-43a7-af60-6c2d9a300b62)
 
 ejecutamos el script
+
 ![imagen](https://github.com/freddy13513/Dhcp/assets/146179724/2d816fbf-cf97-48de-b6e2-cabf9f9a68f7)
 
 reiniciamos el servicio
+
 ![imagen](https://github.com/freddy13513/Dhcp/assets/146179724/77ba9de9-a285-48b6-bad5-89b17149f9c0)
 
 seguramente al apagar el servidor y volver a encender ya no tengamos internet en el cliente para eso revisamos con este comando si el resultado es 0 tenemos que lanzar de nuevo el script  y que el resultado sea 1
+
 ![imagen](https://github.com/freddy13513/Dhcp/assets/146179724/14bf4416-5446-4a8b-8789-780f6144d493)
 
 Aquí nos devuelve 1
+
 ![imagen](https://github.com/freddy13513/Dhcp/assets/146179724/26101b68-8582-4630-944c-ee2c50af0d94)
 
 ejecutamos de nuevo el script y con el comando iptables -L -n vemos que está funcionando con más detalle
+
 ![imagen](https://github.com/freddy13513/Dhcp/assets/146179724/8321da42-ce96-4d98-a0ac-d66992aa9c12)
 
 Failover
 En el fichero etc/dhcp/dhcpd.conf  editamos ya añadimos lo que se muestra en pantalla que es primario la dirección ip la ip del servidor secundario  y en el bloque de abajo la red la mascara la puerta de enlace y los dns.
+
 ![imagen](https://github.com/freddy13513/Dhcp/assets/146179724/ab342743-f9bf-441f-b658-1da5fccf6e3a)
 
 Reiniciamos el servicio. 
