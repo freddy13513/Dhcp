@@ -78,7 +78,7 @@ Aquí nos devuelve 1
 ejecutamos de nuevo el script y con el comando iptables -L -n vemos que está funcionando con más detalle
 ![imagen](https://github.com/freddy13513/Dhcp/assets/146179724/8321da42-ce96-4d98-a0ac-d66992aa9c12)
 
-##Failover
+Failover
 En el fichero etc/dhcp/dhcpd.conf  editamos ya añadimos lo que se muestra en pantalla que es primario la dirección ip la ip del servidor secundario  y en el bloque de abajo la red la mascara la puerta de enlace y los dns.
 ![imagen](https://github.com/freddy13513/Dhcp/assets/146179724/ab342743-f9bf-441f-b658-1da5fccf6e3a)
 
